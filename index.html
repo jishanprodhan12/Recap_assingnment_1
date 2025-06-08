@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recap_Assingment_1</title>
+  <!-- Css  -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- tailwind css  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- daisy ui  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
 </head>
-<body>
-    testing
-    
+
+<body class="azeret-mono">
+  testing
+  <h1 class="text-3xl text-gray-500 "> testing bro</h1>
+  <div>
+    <!-- You can open the modal using ID.showModal() method -->
+    <button class="btn" onclick="my_modal_4.showModal()">open modal</button>
+    <dialog id="my_modal_4" class="modal">
+      <div class="modal-box w-11/12 max-w-5xl">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">Click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
 </body>
+
 </html>
